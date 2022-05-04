@@ -31,3 +31,8 @@ load() fonksiyonu bir ses dosyasının yüklenmesinde ve dosyanın 1 boyutlu say
 ```librosa.load(audio_path, sr=44100) 
 librosa.load(audio_path, sr=none) 
 ```
+Yüklediğiniz ses dosyasını çalıştırmak isterseniz IPython.display ‘den yararlanabilirsiniz. 
+```
+import IPython.display as ipd 
+ipd.Audio(audio_path) 
+```
