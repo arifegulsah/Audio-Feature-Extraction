@@ -22,7 +22,9 @@ Bir ses sinyalinin özelliklerinin analizi ve üzerinde işlem yapılabilmesi i�
 ```import librosa 
 audio_path = 'audio-path' 
 x , sr = librosa.load(audio_path) 
-print(type(x), type(sr))```
+print(type(x), type(sr))
+```
+
 
 load() fonksiyonu bir ses dosyasının yüklenmesinde ve dosyanın 1 boyutlu sayısal bir dizine çevrilmesinde kullanılır. “sr” ise sampling rate’in baş harfleridir yani örnekleme hızına tekabül eder. Varsayılan sampling rate 22kHz’tir. Bu değeri değiştirmek veya yok etmek için kodunuzu şu şekilde düzenleyebilirsiniz: 
 
