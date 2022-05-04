@@ -19,7 +19,7 @@ Yani bir ses verisini incelediğimiz zaman şunu görebilmekteyiz ki; bu veriler
 ##LIBROSA’YA GİRİŞ 
 
 Bir ses sinyalinin özelliklerinin analizi ve üzerinde işlem yapılabilmesi için Python programlama dilinin sahip olduğu **Librosa** paketinden faydalanacağız.  
-`import librosa 
+```import librosa 
 audio_path = 'audio-path' 
 x , sr = librosa.load(audio_path) 
-print(type(x), type(sr)) `
+print(type(x), type(sr)) ```
