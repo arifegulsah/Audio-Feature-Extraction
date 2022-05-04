@@ -7,4 +7,8 @@ Bu yazımda ses verisi içeren dosyaların özniteliklerinin nasıl ve hangi yö
 
 Yani bir ses verisini incelediğimiz zaman şunu görebilmekteyiz ki; bu veriler özünde koordinat düzleminde **“zaman, genlik ve frekansın”** temsil edildiği 3 boyutlu sinyallerden başka bir şey değildir. 
 
+![This is an image](/images/representative.png)
+
+
 SES SİNYALLERİ 
+
