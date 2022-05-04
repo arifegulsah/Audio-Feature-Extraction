@@ -19,9 +19,12 @@ Yani bir ses verisini incelediğimiz zaman şunu görebilmekteyiz ki; bu veriler
 
 ## LIBROSA’YA GİRİŞ 
 
-Bir ses sinyalinin özelliklerinin analizi ve üzerinde işlem yapılabilmesi için Python programlama dilinin sahip olduğu **Librosa** paketinden faydalanacağız.  
+Bir ses sinyalinin özelliklerinin analizi ve üzerinde işlem yapılabilmesi için Python programlama dilinin sahip olduğu **Librosa** paketinden faydalanacağız.
+[audiofile](/audios) dosyasında üzerinde işlem yapabileceğiniz 10 farklı türde müzik dosyası bulunmaktadır.
+Bu yazıdaki örnekler *blues* tipindeki müzik dosyası ile yapılmıştır. Siz diğer türleri de deneyerek karşılaştırma yapabilirsiniz.
+
 ```import librosa 
-audio_path = 'audio-path' 
+audio_path = '/sizin/audio/pathiniz' 
 x , sr = librosa.load(audio_path) 
 print(type(x), type(sr))
 ```
