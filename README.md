@@ -5,7 +5,8 @@ Makine öğrenmesi tekniklerinde, modellere verilen girdilerin model tarafından
 
 Bu yazımda ses verisi içeren dosyaların özniteliklerinin nasıl ve hangi yöntemler ile çıkarılabileceğini açıklamaya çalıştım.  
 
-##SES SİNYALLERİ 
+## SES SİNYALLERİ 
+
 Ses, havanın titreşmesi ve bu titreşimin kulak içine teması sonrasında oluşan bir enerji türüdür. Titreşimler çok farklı frekanslarda ve genliklerde (yani şiddetlerde) olabilmektedir. Bu değerler her ses için farklı ve özeldir. 
 
 Herhangi bir sesin iletilmek veya saklanmak için elektromanyetik enerjiye çevrilmiş haline ise ses sinyali denilmektedir. 
@@ -16,7 +17,7 @@ Yani bir ses verisini incelediğimiz zaman şunu görebilmekteyiz ki; bu veriler
 
 
 
-##LIBROSA’YA GİRİŞ 
+## LIBROSA’YA GİRİŞ 
 
 Bir ses sinyalinin özelliklerinin analizi ve üzerinde işlem yapılabilmesi için Python programlama dilinin sahip olduğu **Librosa** paketinden faydalanacağız.  
 ```import librosa 
@@ -36,3 +37,17 @@ Yüklediğiniz ses dosyasını çalıştırmak isterseniz IPython.display ‘den
 import IPython.display as ipd 
 ipd.Audio(audio_path) 
 ```
+## GÖRSELLEŞTİRME 
+
+### Dalga Grafiği 
+```
+import matplotlib.pyplot as plt 
+import librosa.display 
+plt.figure(figsize=(14, 5)) 
+librosa.display.waveshow(x, sr=sr) 
+```
+
+`librosa.display` ses dosyalarını dalga grafiği, spektrogram veya renk haritası gibi farklı formatlarda görüntüleyebilmemizi sağlar. Dalga grafikleri sesin zamana bağlı olan yüksekliğini resmeder. Spektrogramlar ise zamana bağlı değişen ses genliğini, frekanslarıyla birlikte resmetmektedir. Daha önce de dediğimiz gibi genlik ve frekans her ses için özeldir.  
+
+`librosa.display.waveshow` ile ses dosyamdaki genliğin zamana bağlı değişimini yani dalga grafiğini resmedebildim. Aldığım çıktı şöyle olacaktır. 
+
