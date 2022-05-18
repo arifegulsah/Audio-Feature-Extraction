@@ -125,6 +125,6 @@ print(mfccs.shape)
 librosa.display.specshow(mfccs, sr=sr, x_axis='time') 
 ```
 
-librosa.feature.mfcc, bir sinyalin mfcc'lerini hesaplamak için kullanılır. mfccs'nin şeklini yazdırarak, kaç karede kaç mfcc'nin hesaplandığını elde edersiniz. İlk değer, hesaplanan mfcc sayısını temsil eder ve başka bir değer, mevcut çerçevelerin sayısını temsil eder. 
+`librosa.feature.mfcc`, bir sinyalin mfcc'lerini hesaplamak için kullanılır. mfccs'nin şeklini yazdırarak, kaç karede kaç mfcc'nin hesaplandığını elde edersiniz. İlk değer, hesaplanan mfcc sayısını temsil eder ve başka bir değer, mevcut çerçevelerin sayısını temsil eder. 
 
 ![MFCC1_image](/images/MFCC1.png)
